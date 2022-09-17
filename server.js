@@ -27,7 +27,7 @@ const server = http.createServer((req,res)=>{
     res.end();
    } else {
     res.statusCode=403
-    res.write('<h1>Not Found <br> 404 ERROR </h1>  ');
+    res.write('<h1>Not Found <br> 404  </h1>  ');
     res.end();
    }
    
