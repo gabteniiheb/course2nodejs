@@ -12,7 +12,7 @@ const server = http.createServer((req,res)=>{
    res.write('iheb server \n')
    res.write(req.url);
 
-   res.end();
+   
 
    } else {
     console.log('Error')
@@ -26,7 +26,7 @@ const server = http.createServer((req,res)=>{
     res.write('welcome to profile page');
     res.end();
    } else {
-    res.statusCode=404
+    res.statusCode=403
     res.write('<h1>Not Found <br> 404 ERROR </h1>  ');
     res.end();
    }
